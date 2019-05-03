@@ -1,0 +1,33 @@
+<% if !@resume.errors.empty? %>
+  <div class="alert alert-error">
+    <ul>
+      <% @resume.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+    </ul>
+  </div>
+<% end %>
+
+<div class="well">
+  <%= form_for @resume, :html => {multipart: true, :class => "form-horizontal image" }  do |f| %>
+    <div class="form-group">
+      <%= f.label :name, :class => 'control-label col-lg-2'%>
+      <%= f.text_field :name, :class => 'form-control' %>
+    </div>
+    <br><br>
+    <%= f.label :Resume %>
+    <%= f.file_field :attachment %>
+    <br><br>
+    <%= f.label :LOR %>
+    <%= f.file_field :attachment1 %>
+    <br><br>
+    <%= f.label :Gradesheet %>
+    <%= f.file_field :attachment2 %>
+    <br><br>
+    <%= f.label :Recommendation %>
+    <%= f.file_field :attachment3 %>
+    <br><br>
+      
+    <%= f.submit "Save", class: "btn btn-primary" %>
+  <% end %>
+</div>
