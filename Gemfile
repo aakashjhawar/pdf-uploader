@@ -18,6 +18,11 @@ gem 'uglifier', '>= 1.3.0'
 gem 'tzinfo-data'
 gem 'carrierwave'
 gem 'bootstrap-sass'
+gem 'devise'
+gem 'twitter-bootstrap-rails'
+gem 'devise-bootstrap-views'
+gem 'jquery-rails'
+
 
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2'
