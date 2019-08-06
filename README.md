@@ -1,6 +1,6 @@
 # README
 
-PDF Uploader web app using the [Ruby on Rails](http://rubyonrails.org) framework.
+PDF Uploader web app using the [Ruby on Rails](http://rubyonrails.org) framework. Upload multiple PDFs at the same time. 
 
 ### Requirements
 * Rails 5.2.2
